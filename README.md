@@ -2,7 +2,7 @@
 Timer allows for the simple timing and debugging of overlapping points in PHP script.
 
 ##Usage
----
+
 ###Basic timing
 	Timer::start('foo');
 	// lots of code
@@ -10,7 +10,7 @@ Timer allows for the simple timing and debugging of overlapping points in PHP sc
 
 	// let's see how things performed
 	Timer::showRuns();	
----
+	
 ###Timing different, overlapping points
 	Timer::start('foo');
 	// lots of code

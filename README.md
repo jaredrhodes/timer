@@ -30,6 +30,6 @@ if you have started a *Timer* that you have not stopped.
 
 ##To Do
 
--Allow for return of run data instead of echoing
--Add logging to file
--Allow for configurable reporting: start, stop, elapsed, line numbers or any mix of these in any order..
+*Allow for return of run data instead of echoing
+*Add logging to file
+*Allow for configurable reporting: start, stop, elapsed, line numbers or any mix of these in any order..

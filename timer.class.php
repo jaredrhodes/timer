@@ -2,8 +2,10 @@
 
 /**
  * Jared Rosenberg 2012/12/11
- * 
+ * jared@shortlinedesign.com
+ *  
  * Timer class for easily timing scripts
+ * 
  */
 
 class Timer{

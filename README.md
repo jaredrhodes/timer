@@ -10,7 +10,7 @@ Timer allows for the simple timing and debugging of overlapping points in PHP sc
 
 	// let's see how things performed
 	Timer::showRuns();	
-	
+
 ###Timing different, overlapping points
 	Timer::start('foo');
 	// lots of code
@@ -27,3 +27,9 @@ Timer allows for the simple timing and debugging of overlapping points in PHP sc
 
 The class keeps track of what has been started and what has been stopped and will let you know
 if you have started a *Timer* that you have not stopped.
+
+##To Do
+
+-Allow for return of run data instead of echoing
+-Add logging to file
+-Allow for configurable reporting: start, stop, elapsed, line numbers or any mix of these in any order..

@@ -73,16 +73,6 @@ class Timer{
 			}
 		}
 	}
-
-	//!! Add logging
-	public static function logRuns($log_path)
-	{
-		
-		file_put_contents($log_path, $out, FILE_APPEND);
-
-		// reset array
-		self::$records = array( 'start'=>array(), 'stop'=>array() );
-	}
 }
 
 ?>

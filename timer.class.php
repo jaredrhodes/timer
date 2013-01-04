@@ -43,6 +43,10 @@ class Timer{
 
 		// key we are looking for
 		$key = array_search( $bookmark, self::$runs['running'] );
+		if( $key === false )
+		{
+			die('You never started Timer: "' .$bookmark. '" on line ' .self::$records['stop'][$bookmark]['debug'][0]['line'] );
+		}
 		// get rid of this run's bookmark
 		unset(self::$runs['running'][$key]);
 	}
@@ -67,9 +71,13 @@ class Timer{
 				$out[$mark]['linestart'] = self::$records['start'][$mark]['debug'][0]['line'];
 				$out[$mark]['linestop'] = self::$records['stop'][$mark]['debug'][0]['line'];
 			}
+
+			echo '<hr/>';
+
 			foreach( $out as $mark=>$values)
 			{
-				echo PHP_EOL."$mark({$values['linestart']} - {$values['linestop']}): {$values['elapsed']}s";
+				echo "$mark({$values['linestart']} - {$values['linestop']}): {$values['elapsed']}s";
+				echo '<hr/>';
 			}
 		}
 	}
